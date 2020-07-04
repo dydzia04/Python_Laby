@@ -1,6 +1,6 @@
 import sys
 if len(sys.argv) < 2:
-    print("Uruchamiajac skrypt podaj co najmniej jeden parametr!")
+    print("Podaj przynajmniej 1 parametr!")
 else:
     ilosc = 0
     wyrazy = []
@@ -9,5 +9,5 @@ else:
             ilosc+=1
             wyrazy.insert(0,sys.argv[x])
     
-    print("ilosc argumentów dłuższych lub równych 3 znaki = "+str(ilosc))
-    print("argument dłuższe lub równe 3 od końca = "+" ".join(wyrazy))
+    print("Ilość argumentów dłuższych lub równych 3 znaki = "+str(ilosc))
+    print("Argumenty dłuższe lub równe 3 od końca = "+" ".join(wyrazy))

@@ -1,7 +1,7 @@
 import sys
 from datetime import date
 if len(sys.argv) < 2:
-    print("Uruchamiajac skrypt podaj jako parametr datę!")
+    print("Uruchamiajac skrypt podaj jako argument datę.")
 else:
     data = date.fromisoformat(sys.argv[1])
     today = date.today()

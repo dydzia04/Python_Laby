@@ -1,7 +1,7 @@
-def histogram(tekst):
+def histogram(tekst_param):
     dictionary = {}
     
-    for znak in tekst:
+    for znak in tekst_param:
         if znak != " ":
             if znak in dictionary:
                 dictionary[znak] += 1
@@ -11,4 +11,4 @@ def histogram(tekst):
     return dictionary
 
                 
-print(histogram("aaa 222  3333 fff"))
+print(histogram("AAA 1  4444 fff"))

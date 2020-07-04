@@ -1,12 +1,12 @@
 import random
 
 class Karta:
-    def __init__(self, ranga, kolor):
-        self.ranga =ranga
+    def __init__(self, figura, kolor):
+        self.figura =figura
         self.kolor =kolor
         
     def show(self):
-        print("('"+self.ranga+"', '"+self.kolor+"')")
+        print("('"+self.figura+"', '"+self.kolor+"')")
         
 class Gracz:
     def __init__(self):
@@ -15,7 +15,7 @@ class Gracz:
     def  __str__(self):
         karty = "["
         for k in self.karty:
-            karty+="('"+k.ranga+"', '"+k.kolor+"'),"
+            karty+="('"+k.figura+"', '"+k.kolor+"'),"
         karty = karty[:-1]
         karty+="]"
         return karty
@@ -27,8 +27,8 @@ class Gracz:
 def Deck():
     talia =[]
     for kolor in ['Pik', 'Karo', 'Kier', 'Trefl']:
-            for ranga in ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'D', 'K', 'A']:
-                talia.append(Karta(ranga,kolor))      
+            for figura in ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'D', 'K', 'A']:
+                talia.append(Karta(figura,kolor))      
     return talia;
 
 def show(deck):

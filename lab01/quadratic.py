@@ -1,7 +1,7 @@
 import sys
 import math
 if len(sys.argv) < 4:
-    print("Uruchamiajac skrypt podaj zmienne a,b,c")
+    print("Uruchamiając skrypt podaj zmienne a,b,c.")
 else:
     a = int(sys.argv[1])
     b = int(sys.argv[2])

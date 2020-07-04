@@ -1,6 +1,6 @@
 import sys
 if len(sys.argv) < 4:
-    print("Uruchamiajac skrypt podaj jako parametr zmienna a, działanie, zmienna b!")
+    print("Uruchamiajac skrypt podaj jako parametr zmienną, działanie oraz drugą zmienną.")
 else:
     a = sys.argv[1]
     znak = sys.argv[2]
